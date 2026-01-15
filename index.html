@@ -9,16 +9,23 @@
       content="Pompes Funèbres Thompson à Osny. Accompagnement humain et discret pour l'organisation des obsèques, cérémonies, rapatriement et marbrerie."
     />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome via jsDelivr (plus stable) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts avec fallback -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <!-- Fallback local pour les polices -->
+    <style>
+      /* Fallback fonts si Google Fonts ne charge pas */
+      @import url("https://fonts.googleapis.com/css2?family=Georgia&family=Arial&display=swap");
+    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -33,9 +40,10 @@
             <i class="fas fa-phone"></i> Appeler
           </a>
           <a
-            href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20obtenir%20des%20informations"
+            href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20obtenir%20des%20informations%20sur%20vos%20services%20funéraires"
             class="emergency-btn whatsapp-btn"
             target="_blank"
+            rel="noopener"
           >
             <i class="fab fa-whatsapp"></i> WhatsApp
           </a>
@@ -112,6 +120,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20accompagnement%20pour%20l'organisation%20d'obsèques"
               class="hero-btn secondary-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Écrire sur WhatsApp
             </a>
@@ -247,7 +256,9 @@
           <!-- Produit 1 -->
           <div class="product-card">
             <div class="product-image">
-              <div class="image-placeholder cercueil-1">Chêne massif</div>
+              <div class="image-placeholder cercueil-1">
+                <img src="./assets/images/cercueil_1.jpg" alt="Chêne massif" />
+              </div>
             </div>
             <h3 class="product-name">Cercueil en chêne massif</h3>
             <p class="product-price">Sur devis</p>
@@ -255,6 +266,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20un%20cercueil%20en%20chêne%20massif"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -263,7 +275,9 @@
           <!-- Produit 2 -->
           <div class="product-card">
             <div class="product-image">
-              <div class="image-placeholder cercueil-2">Bois merisier</div>
+              <div class="image-placeholder cercueil-1">
+                <img src="./assets/images//02.jpg" alt="Chêne massif" />
+              </div>
             </div>
             <h3 class="product-name">Cercueil en bois merisier</h3>
             <p class="product-price">Sur devis</p>
@@ -271,6 +285,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20un%20cercueil%20en%20bois%20merisier"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -279,7 +294,9 @@
           <!-- Produit 3 -->
           <div class="product-card">
             <div class="product-image">
-              <div class="image-placeholder cercueil-3">Pin français</div>
+              <div class="image-placeholder cercueil-1">
+                <img src="./assets/images//02.jpg" alt="Chêne massif" />
+              </div>
             </div>
             <h3 class="product-name">Cercueil en pin français</h3>
             <p class="product-price">À partir de 990€</p>
@@ -287,6 +304,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20un%20cercueil%20en%20pin%20français"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -295,7 +313,9 @@
           <!-- Produit 4 -->
           <div class="product-card">
             <div class="product-image">
-              <div class="image-placeholder cercueil-4">Urne en bois</div>
+              <div class="image-placeholder cercueil-1">
+                <img src="./assets/images//02.jpg" alt="Chêne massif" />
+              </div>
             </div>
             <h3 class="product-name">Urne funéraire en bois sculpté</h3>
             <p class="product-price">Sur devis</p>
@@ -303,6 +323,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20une%20urne%20funéraire%20en%20bois"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -311,8 +332,8 @@
           <!-- Produit 5 -->
           <div class="product-card">
             <div class="product-image">
-              <div class="image-placeholder cercueil-5">
-                Cercueil écologique
+              <div class="image-placeholder cercueil-1">
+                <img src="./assets/images//02.jpg" alt="Chêne massif" />
               </div>
             </div>
             <h3 class="product-name">Cercueil écologique</h3>
@@ -321,6 +342,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20un%20cercueil%20écologique"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -329,7 +351,9 @@
           <!-- Produit 6 -->
           <div class="product-card">
             <div class="product-image">
-              <div class="image-placeholder cercueil-6">Urne en céramique</div>
+              <div class="image-placeholder cercueil-1">
+                <img src="./assets/images//02.jpg" alt="Chêne massif" />
+              </div>
             </div>
             <h3 class="product-name">Urne en céramique personnalisable</h3>
             <p class="product-price">Sur devis</p>
@@ -337,6 +361,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20une%20urne%20en%20céramique"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -357,7 +382,9 @@
           <!-- Produit 1 -->
           <div class="product-card">
             <div class="product-image">
-              <div class="image-placeholder fleur-1">Couronne de roses</div>
+              <div class="image-placeholder cercueil-1">
+                <img src="./assets/images//04.jpg" alt="Chêne massif" />
+              </div>
             </div>
             <h3 class="product-name">Couronne de roses blanches</h3>
             <p class="product-price">À partir de 120€</p>
@@ -365,6 +392,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20une%20couronne%20de%20roses%20blanches"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -373,7 +401,9 @@
           <!-- Produit 2 -->
           <div class="product-card">
             <div class="product-image">
-              <div class="image-placeholder fleur-2">Bouquet élégant</div>
+              <div class="image-placeholder cercueil-1">
+                <img src="./assets/images//03.jpg" alt="Chêne massif" />
+              </div>
             </div>
             <h3 class="product-name">Bouquet de fleurs des champs</h3>
             <p class="product-price">À partir de 75€</p>
@@ -381,6 +411,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20un%20bouquet%20de%20fleurs%20des%20champs"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -389,7 +420,9 @@
           <!-- Produit 3 -->
           <div class="product-card">
             <div class="product-image">
-              <div class="image-placeholder fleur-3">Coussin floral</div>
+              <div class="image-placeholder cercueil-1">
+                <img src="./assets/images//03.jpg" alt="Chêne massif" />
+              </div>
             </div>
             <h3 class="product-name">Coussin floral personnalisé</h3>
             <p class="product-price">Sur devis</p>
@@ -397,6 +430,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20un%20coussin%20floral"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -413,6 +447,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20une%20composition%20lys%20et%20roses"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -429,6 +464,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20une%20gerbe%20traditionnelle"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -445,6 +481,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20pour%20des%20ornements%20funéraires"
               class="product-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> Demander un devis
             </a>
@@ -467,6 +504,7 @@
           action="mailto:pf.thompson95@gmail.com"
           method="post"
           enctype="text/plain"
+          target="_blank"
         >
           <div class="form-group">
             <label for="name">Nom et prénom *</label>
@@ -529,6 +567,7 @@
               href="https://wa.me/33688363052?text=Bonjour,%20je%20souhaiterais%20un%20devis%20personnalisé"
               class="contact-btn whatsapp-btn"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
@@ -663,28 +702,30 @@
         const mobileMenuBtn = document.getElementById("mobileMenuBtn");
         const mobileNav = document.getElementById("mobileNav");
 
-        mobileMenuBtn.addEventListener("click", function () {
-          mobileNav.classList.toggle("active");
-          const icon = mobileMenuBtn.querySelector("i");
-          if (mobileNav.classList.contains("active")) {
-            icon.classList.remove("fa-bars");
-            icon.classList.add("fa-times");
-          } else {
-            icon.classList.remove("fa-times");
-            icon.classList.add("fa-bars");
-          }
-        });
-
-        // Fermer le menu en cliquant sur un lien
-        const mobileLinks = mobileNav.querySelectorAll("a");
-        mobileLinks.forEach((link) => {
-          link.addEventListener("click", function () {
-            mobileNav.classList.remove("active");
+        if (mobileMenuBtn && mobileNav) {
+          mobileMenuBtn.addEventListener("click", function () {
+            mobileNav.classList.toggle("active");
             const icon = mobileMenuBtn.querySelector("i");
-            icon.classList.remove("fa-times");
-            icon.classList.add("fa-bars");
+            if (mobileNav.classList.contains("active")) {
+              icon.classList.remove("fa-bars");
+              icon.classList.add("fa-times");
+            } else {
+              icon.classList.remove("fa-times");
+              icon.classList.add("fa-bars");
+            }
           });
-        });
+
+          // Fermer le menu en cliquant sur un lien
+          const mobileLinks = mobileNav.querySelectorAll("a");
+          mobileLinks.forEach((link) => {
+            link.addEventListener("click", function () {
+              mobileNav.classList.remove("active");
+              const icon = mobileMenuBtn.querySelector("i");
+              icon.classList.remove("fa-times");
+              icon.classList.add("fa-bars");
+            });
+          });
+        }
 
         // Smooth scroll pour les ancres
         document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
